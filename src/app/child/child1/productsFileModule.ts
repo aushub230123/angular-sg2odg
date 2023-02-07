@@ -1,9 +1,9 @@
-// export interface Product {
-//   id: number;
-//   name: string;
-//   price: number;
-//   description: string;
-// }
+export interface Product {
+  id: number;
+  name: string;
+  price: number;
+  description: string;
+}
 
 export const products = [
   {
@@ -14,9 +14,7 @@ export const products = [
   },
   {
     id: 2,
-    name:  `How much wood 
-    a  wook chuck chuck
-     if a wood chuck could chuck wood!`,
+    name:  `Phone Mini`,
     price: 699,
     description: 'A great phone with one of the best cameras'
   },
