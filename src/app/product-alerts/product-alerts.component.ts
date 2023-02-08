@@ -9,5 +9,5 @@ import {Product} from "../child/child1/productsFileModule";
 })
 export class ProductAlertsComponent {
 @Input() product!:Product;
-@Output() notify = new EventEmitter();
+@Output() notifyEventEmitterFromChild = new EventEmitter();
 }

@@ -13,6 +13,10 @@ export class ProductListComponent {
   share() {
     alert('The product has been shared!');
   }
+
+  handleOnNotifyInParent() {
+    alert("You will be notified when product is on sale!")
+  }
 }
 
 

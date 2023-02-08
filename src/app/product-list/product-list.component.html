@@ -9,7 +9,11 @@
   </p>
   <p>{{ productItem.price }}</p>
   <button type="button" (click)="share()">Share and care!!!!</button>
-  <app-product-alerts></app-product-alerts>
+
+  <app-product-alerts 
+  [product]="productItem"
+  (notifyEventEmitterFromChild) = "handleOnNotifyInParent()"
+  ></app-product-alerts>
   <br/>
 </div>
 
