@@ -1,4 +1,4 @@
-import { Component, Input } from "@angular/core";
+import { Component, EventEmitter, Input, Output } from "@angular/core";
 import {Product} from "../child/child1/productsFileModule";
 // The component decorator
 @Component({
@@ -9,4 +9,5 @@ import {Product} from "../child/child1/productsFileModule";
 })
 export class ProductAlertsComponent {
 @Input() product!:Product;
+@Output() notify = new EventEmitter();
 }
