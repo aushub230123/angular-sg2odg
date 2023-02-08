@@ -1,18 +1,20 @@
-<h2>Products</h2>
+<h2 style="color:red">Products</h2>
 <div *ngFor="let productItem of productsVar">
   <h2>
-    <a [title]="productItem.name + ' details'">  {{productItem.name}}</a>
+    <a [title]="productItem.name + ' details'"> {{ productItem.name }}</a>
   </h2>
-  <p *ngIf="productItem.description"> Description : {{productItem.description}}</p>
-  <p>{{productItem.price}}</p>
- <button type="button" (click)="share()">
-  Share and care!!!!
- </button>
+  <p *ngIf="productItem.description">
+    Description : {{ productItem.description }}
+  </p>
+  <p>{{ productItem.price }}</p>
+  <button type="button" (click)="share()">Share and care!!!!</button>
 </div>
 
-<hr> <br><br> <br>
+<hr />
+<br /><br />
+<br />
 <h2>Customer Data</h2>
 <div>
-<!-- A stylish table using css -->
-<!-- *ngFor to iterate through customers data -->
+  <!-- A stylish table using css -->
+  <!-- *ngFor to iterate through customers data -->
 </div>

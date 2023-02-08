@@ -5,7 +5,7 @@ import { products } from '../child/child1/productsFileModule';
 @Component({
   selector: 'app-product-list',
   templateUrl: './product-list.component.html',
-  styleUrls: ['./product-list.component.css']
+  styleUrls: ['./product-list.component.css','./product-list.component-newstyle.css']
 })
 export class ProductListComponent {
   productsVar = products;
