@@ -1,5 +1,6 @@
+
 <h2 style="color:red">Products</h2>
-<div *ngFor="let productItem of productsVar">
+<div *ngFor="let productItem of productsVar" style="background-color:cyan">
   <h2>
     <a [title]="productItem.name + ' details'"> {{ productItem.name }}</a>
   </h2>
@@ -8,6 +9,8 @@
   </p>
   <p>{{ productItem.price }}</p>
   <button type="button" (click)="share()">Share and care!!!!</button>
+  <app-product-alerts></app-product-alerts>
+  <br/>
 </div>
 
 <hr />
