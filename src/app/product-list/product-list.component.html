@@ -2,7 +2,9 @@
 <h2 style="color:red">Products</h2>
 <div *ngFor="let productItem of productsVar" style="background-color:cyan">
   <h2>
-    <a [title]="productItem.name + ' details'"> {{ productItem.name }}</a>
+    <!-- <a [title]="productItem.name + ' details'"> {{ productItem.name }}</a> -->
+    <a [title]="productItem.name + ' details'"
+    [routerLink]="['./products',productItem.id]"> {{ productItem.name }}</a>
   </h2>
   <p *ngIf="productItem.description">
     Description : {{ productItem.description }}
